@@ -14,6 +14,7 @@
 		749A7F9A2C59EB9300B04266 /* LolibabaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749A7F992C59EB9300B04266 /* LolibabaTests.swift */; };
 		749A7FA42C59EB9300B04266 /* LolibabaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749A7FA32C59EB9300B04266 /* LolibabaUITests.swift */; };
 		749A7FA62C59EB9300B04266 /* LolibabaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749A7FA52C59EB9300B04266 /* LolibabaUITestsLaunchTests.swift */; };
+		749A7FB32C59F11800B04266 /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749A7FB22C59F11800B04266 /* SplashScreenView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		749A7F9F2C59EB9300B04266 /* LolibabaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LolibabaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		749A7FA32C59EB9300B04266 /* LolibabaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LolibabaUITests.swift; sourceTree = "<group>"; };
 		749A7FA52C59EB9300B04266 /* LolibabaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LolibabaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		749A7FB22C59F11800B04266 /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				749A7F8B2C59EB9300B04266 /* Assets.xcassets */,
 				749A7F8D2C59EB9300B04266 /* Lolibaba.entitlements */,
 				749A7F8E2C59EB9300B04266 /* Preview Content */,
+				749A7FB22C59F11800B04266 /* SplashScreenView.swift */,
 			);
 			path = Lolibaba;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 			files = (
 				749A7F8A2C59EB9100B04266 /* ContentView.swift in Sources */,
 				749A7F882C59EB9100B04266 /* LolibabaApp.swift in Sources */,
+				749A7FB32C59F11800B04266 /* SplashScreenView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,6 +432,7 @@
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreenView.swift;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -440,10 +445,11 @@
 				PRODUCT_BUNDLE_IDENTIFIER = lolibaba.Lolibaba;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -464,6 +470,7 @@
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreenView.swift;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -476,10 +483,11 @@
 				PRODUCT_BUNDLE_IDENTIFIER = lolibaba.Lolibaba;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
