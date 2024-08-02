@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		742074BD2C5CC3680055A3A6 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742074BC2C5CC3680055A3A6 /* HomeView.swift */; };
+		742074C02C5CC44D0055A3A6 /* ProductDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742074BF2C5CC44D0055A3A6 /* ProductDetailView.swift */; };
 		749A7F882C59EB9100B04266 /* LolibabaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749A7F872C59EB9100B04266 /* LolibabaApp.swift */; };
 		749A7FB32C59F11800B04266 /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749A7FB22C59F11800B04266 /* SplashScreenView.swift */; };
 		74D723802C5CBF9D0044B859 /* Montserrat-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 74D723602C5CBF9D0044B859 /* Montserrat-Black.ttf */; };
@@ -33,29 +35,12 @@
 		74D723972C5CBF9D0044B859 /* Autosort.pl in Resources */ = {isa = PBXBuildFile; fileRef = 74D7237E2C5CBF9D0044B859 /* Autosort.pl */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		749A7F962C59EB9300B04266 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 749A7F7C2C59EB9100B04266 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 749A7F832C59EB9100B04266;
-			remoteInfo = Lolibaba;
-		};
-		749A7FA02C59EB9300B04266 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 749A7F7C2C59EB9100B04266 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 749A7F832C59EB9100B04266;
-			remoteInfo = Lolibaba;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
+		742074BC2C5CC3680055A3A6 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		742074BF2C5CC44D0055A3A6 /* ProductDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailView.swift; sourceTree = "<group>"; };
 		749A7F842C59EB9100B04266 /* Lolibaba.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lolibaba.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		749A7F872C59EB9100B04266 /* LolibabaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LolibabaApp.swift; sourceTree = "<group>"; };
 		749A7F8D2C59EB9300B04266 /* Lolibaba.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Lolibaba.entitlements; sourceTree = "<group>"; };
-		749A7F952C59EB9300B04266 /* LolibabaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LolibabaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		749A7F9F2C59EB9300B04266 /* LolibabaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LolibabaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		749A7FB22C59F11800B04266 /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
 		74D723602C5CBF9D0044B859 /* Montserrat-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Black.ttf"; sourceTree = "<group>"; };
 		74D723612C5CBF9D0044B859 /* Montserrat-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-BlackItalic.ttf"; sourceTree = "<group>"; };
@@ -89,23 +74,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		749A7F922C59EB9300B04266 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		749A7F9C2C59EB9300B04266 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		742074BB2C5CC34F0055A3A6 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				742074BC2C5CC3680055A3A6 /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		742074BE2C5CC3DB0055A3A6 /* Product Detail */ = {
+			isa = PBXGroup;
+			children = (
+				742074BF2C5CC44D0055A3A6 /* ProductDetailView.swift */,
+			);
+			path = "Product Detail";
+			sourceTree = "<group>";
+		};
 		749A7F7B2C59EB9100B04266 = {
 			isa = PBXGroup;
 			children = (
@@ -118,8 +105,6 @@
 			isa = PBXGroup;
 			children = (
 				749A7F842C59EB9100B04266 /* Lolibaba.app */,
-				749A7F952C59EB9300B04266 /* LolibabaTests.xctest */,
-				749A7F9F2C59EB9300B04266 /* LolibabaUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -214,6 +199,8 @@
 		74D723982C5CC0520044B859 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				742074BE2C5CC3DB0055A3A6 /* Product Detail */,
+				742074BB2C5CC34F0055A3A6 /* Home */,
 				74D723782C5CBF9D0044B859 /* MainMenuView.swift */,
 			);
 			path = Features;
@@ -248,42 +235,6 @@
 			productReference = 749A7F842C59EB9100B04266 /* Lolibaba.app */;
 			productType = "com.apple.product-type.application";
 		};
-		749A7F942C59EB9300B04266 /* LolibabaTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 749A7FAC2C59EB9300B04266 /* Build configuration list for PBXNativeTarget "LolibabaTests" */;
-			buildPhases = (
-				749A7F912C59EB9300B04266 /* Sources */,
-				749A7F922C59EB9300B04266 /* Frameworks */,
-				749A7F932C59EB9300B04266 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				749A7F972C59EB9300B04266 /* PBXTargetDependency */,
-			);
-			name = LolibabaTests;
-			productName = LolibabaTests;
-			productReference = 749A7F952C59EB9300B04266 /* LolibabaTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		749A7F9E2C59EB9300B04266 /* LolibabaUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 749A7FAF2C59EB9300B04266 /* Build configuration list for PBXNativeTarget "LolibabaUITests" */;
-			buildPhases = (
-				749A7F9B2C59EB9300B04266 /* Sources */,
-				749A7F9C2C59EB9300B04266 /* Frameworks */,
-				749A7F9D2C59EB9300B04266 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				749A7FA12C59EB9300B04266 /* PBXTargetDependency */,
-			);
-			name = LolibabaUITests;
-			productName = LolibabaUITests;
-			productReference = 749A7F9F2C59EB9300B04266 /* LolibabaUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -296,14 +247,6 @@
 				TargetAttributes = {
 					749A7F832C59EB9100B04266 = {
 						CreatedOnToolsVersion = 15.4;
-					};
-					749A7F942C59EB9300B04266 = {
-						CreatedOnToolsVersion = 15.4;
-						TestTargetID = 749A7F832C59EB9100B04266;
-					};
-					749A7F9E2C59EB9300B04266 = {
-						CreatedOnToolsVersion = 15.4;
-						TestTargetID = 749A7F832C59EB9100B04266;
 					};
 				};
 			};
@@ -321,8 +264,6 @@
 			projectRoot = "";
 			targets = (
 				749A7F832C59EB9100B04266 /* Lolibaba */,
-				749A7F942C59EB9300B04266 /* LolibabaTests */,
-				749A7F9E2C59EB9300B04266 /* LolibabaUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -355,20 +296,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		749A7F932C59EB9300B04266 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		749A7F9D2C59EB9300B04266 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -379,38 +306,13 @@
 				74D723922C5CBF9D0044B859 /* Font+Extension.swift in Sources */,
 				749A7F882C59EB9100B04266 /* LolibabaApp.swift in Sources */,
 				74D723932C5CBF9D0044B859 /* MainMenuView.swift in Sources */,
+				742074BD2C5CC3680055A3A6 /* HomeView.swift in Sources */,
 				749A7FB32C59F11800B04266 /* SplashScreenView.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		749A7F912C59EB9300B04266 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		749A7F9B2C59EB9300B04266 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				742074C02C5CC44D0055A3A6 /* ProductDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		749A7F972C59EB9300B04266 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 749A7F832C59EB9100B04266 /* Lolibaba */;
-			targetProxy = 749A7F962C59EB9300B04266 /* PBXContainerItemProxy */;
-		};
-		749A7FA12C59EB9300B04266 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 749A7F832C59EB9100B04266 /* Lolibaba */;
-			targetProxy = 749A7FA02C59EB9300B04266 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		749A7FA72C59EB9300B04266 /* Debug */ = {
@@ -603,92 +505,6 @@
 			};
 			name = Release;
 		};
-		749A7FAD2C59EB9300B04266 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
-				MACOSX_DEPLOYMENT_TARGET = 14.5;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = lolibaba.LolibabaTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Lolibaba.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Lolibaba";
-			};
-			name = Debug;
-		};
-		749A7FAE2C59EB9300B04266 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
-				MACOSX_DEPLOYMENT_TARGET = 14.5;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = lolibaba.LolibabaTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Lolibaba.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Lolibaba";
-			};
-			name = Release;
-		};
-		749A7FB02C59EB9300B04266 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
-				MACOSX_DEPLOYMENT_TARGET = 14.5;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = lolibaba.LolibabaUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Lolibaba;
-			};
-			name = Debug;
-		};
-		749A7FB12C59EB9300B04266 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
-				MACOSX_DEPLOYMENT_TARGET = 14.5;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = lolibaba.LolibabaUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Lolibaba;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -706,24 +522,6 @@
 			buildConfigurations = (
 				749A7FAA2C59EB9300B04266 /* Debug */,
 				749A7FAB2C59EB9300B04266 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		749A7FAC2C59EB9300B04266 /* Build configuration list for PBXNativeTarget "LolibabaTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				749A7FAD2C59EB9300B04266 /* Debug */,
-				749A7FAE2C59EB9300B04266 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		749A7FAF2C59EB9300B04266 /* Build configuration list for PBXNativeTarget "LolibabaUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				749A7FB02C59EB9300B04266 /* Debug */,
-				749A7FB12C59EB9300B04266 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

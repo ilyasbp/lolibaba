@@ -9,9 +9,9 @@ import SwiftUI
 
 @main
 struct LolibabaApp: App {
-    var body: some Scene {
-        WindowGroup {
-					SplashScreenView()
-        }
-    }
+	var body: some Scene {
+		WindowGroup {
+			SplashScreenView()
+		}
+	}
 }

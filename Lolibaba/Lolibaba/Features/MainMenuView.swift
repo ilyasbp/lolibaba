@@ -16,49 +16,47 @@ struct MainMenuView: View {
 	}
 
 	var body: some View {
-		TabView(selection: $selectedTab) {
-			FeaturedProductsView()
-				.tabItem {
-					Image(systemName: "house.fill")
-					Text("Home")
-				}
-				.tag(0)
+		VStack {
+			TabView(selection: $selectedTab) {
+				HomeView()
+					.tabItem {
+						Image(systemName: "house.fill")
+						Text("Home")
+					}
+					.tag(0)
 
-			CategoriesView()
-				.tabItem {
-					Image(systemName: "list.bullet")
-					Text("Categories")
-				}
-				.tag(1)
+				CategoriesView()
+					.tabItem {
+						Image(systemName: "list.bullet")
+						Text("Categories")
+					}
+					.tag(1)
 
-			OrdersView()
-				.tabItem {
-					Image(systemName: "bag.fill")
-					Text("Orders")
-				}
-				.tag(3)
+				OrdersView()
+					.tabItem {
+						Image(systemName: "bag.fill")
+						Text("Orders")
+					}
+					.tag(3)
 
-			ProfileView()
-				.tabItem {
-					Image(systemName: "person.fill")
-					Text("Profile")
-				}
-				.tag(4)
+				ProfileView()
+					.tabItem {
+						Image(systemName: "person.fill")
+						Text("Profile")
+					}
+					.tag(4)
+			}
+			.font(.custom("Montserrat-Black", size: 30))
+			.tint(Color.reddishOrange)
 		}
-		.font(.custom("Montserrat-Black", size: 30))
-		.tint(Color.reddishOrange)
+
+		.background(Color.seashell)
 	}
 }
 
 struct CategoriesView: View {
 	var body: some View {
 		Color.black
-	}
-}
-
-struct FeaturedProductsView: View {
-	var body: some View {
-		Color.gray
 	}
 }
 
