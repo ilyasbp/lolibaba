@@ -8,24 +8,41 @@
 import SwiftUI
 
 struct HomeView: View {
+	@State private var bannerIndex = 0
+	private let timer = Timer.publish(every: 3, on: .main, in: .common).autoconnect()
+	private let images: [Image] = [
+		Image(.bannerKemerdekaan),
+		Image(.bannerSepatu),
+		Image(.bannerFashion),
+		Image(.bannerLiburan),
+		Image(.bannerElektronik),
+		Image(.bannerSandal)
+	]
+	
 	var body: some View {
 		NavigationView {
 			ScrollView {
 				VStack(alignment: .leading, spacing: 20) {
-					// Banner Promosi
-					TabView {
-						Image("banner1")
-							.resizable()
-							.scaledToFill()
-						Image("banner2")
-							.resizable()
-							.scaledToFill()
-						Image("banner3")
-							.resizable()
-							.scaledToFill()
+					TabView(selection: $bannerIndex) {
+						ForEach(0 ..< images.count, id: \.self) { index in
+							images[index]
+								.resizable()
+								.scaledToFill()
+								.tag(index)
+						}
 					}
 					.frame(height: 200)
-					.tabViewStyle(PageTabViewStyle())
+					.tabViewStyle(.page)
+					.onReceive(timer) { _ in
+						if (bannerIndex + 1) % images.count == 0 {
+							bannerIndex = (bannerIndex + 1) % images.count
+						}
+						else {
+							withAnimation {
+								bannerIndex = (bannerIndex + 1) % images.count
+							}
+						}
+					}
 					
 					// Kategori Produk
 					Text("Categories")
@@ -120,5 +137,5 @@ struct Product: Identifiable {
 }
 
 #Preview {
-    HomeView()
+	HomeView()
 }

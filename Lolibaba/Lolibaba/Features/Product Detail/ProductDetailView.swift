@@ -14,7 +14,7 @@ struct ProductDetailView: View {
 	var body: some View {
 		VStack {
 			HStack {
-				Button(action: {}) {
+				Button(action: { presentationMode.wrappedValue.dismiss() }) {
 					Image(systemName: "arrow.backward")
 						.resizable()
 						.scaledToFit()
