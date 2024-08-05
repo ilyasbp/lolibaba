@@ -44,35 +44,39 @@ struct HomeView: View {
 						}
 					}
 					
-					// Kategori Produk
-					Text("Categories")
-						.font(.title2)
-						.fontWeight(.bold)
-						.padding(.horizontal)
-					
-					ScrollView(.horizontal, showsIndicators: false) {
-						HStack(spacing: 15) {
-							CategoryView(imageName: "category1", categoryName: "Clothing")
-							CategoryView(imageName: "category2", categoryName: "Electronics")
-							CategoryView(imageName: "category3", categoryName: "Accessories")
+					VStack(spacing: 16) {
+						HStack {
+							CategoryView(categoryImage: .iconFashion, categoryName: "Fashion")
+							CategoryView(categoryImage: .iconElectronic, categoryName: "Elektronik")
+							CategoryView(categoryImage: .iconKecantikan, categoryName: "Kecantikan")
+							CategoryView(categoryImage: .iconOlahraga, categoryName: "Olahraga")
+							CategoryView(categoryImage: .iconMakanan, categoryName: "Makanan")
 						}
-						.padding(.horizontal)
+						
+						HStack {
+							CategoryView(categoryImage: .iconFurniture, categoryName: "Furniture")
+							CategoryView(categoryImage: .iconOtomotif, categoryName: "Otomotif")
+							CategoryView(categoryImage: .iconGadget, categoryName: "Gadget")
+							CategoryView(categoryImage: .iconMainan, categoryName: "Mainan")
+							CategoryView(categoryImage: .iconKesehatan, categoryName: "Kesehatan")
+						}
 					}
+					.padding(.horizontal, 20)
 					
-					// Produk Unggulan
-					Text("Featured Products")
-						.font(.title2)
-						.fontWeight(.bold)
-						.padding(.horizontal)
-					
-					LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 20) {
-						ForEach(Product.sampleProducts) { product in
-							NavigationLink(destination: ProductDetailView(product: product)) {
-								ProductCardView(product: product)
+					VStack(alignment: .leading, spacing: 10) {
+						Text("Featured Products")
+							.font(.montserratSemiBold(16))
+							.padding(.horizontal)
+						
+						LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 10) {
+							ForEach(Product.sampleProducts) { product in
+								NavigationLink(destination: ProductDetailView(product: product)) {
+									ProductCardView(product: product)
+								}
 							}
 						}
+						.padding(.horizontal, 14)
 					}
-					.padding(.horizontal)
 				}
 				.padding(.vertical)
 			}
@@ -81,20 +85,24 @@ struct HomeView: View {
 }
 
 struct CategoryView: View {
-	let imageName: String
+	let categoryImage: ImageResource
 	let categoryName: String
 	
 	var body: some View {
-		VStack {
-			Image(imageName)
-				.resizable()
-				.scaledToFit()
-				.frame(width: 100, height: 100)
-				.cornerRadius(10)
-			Text(categoryName)
-				.font(.caption)
+		Button(action: {}) {
+			VStack {
+				Image(categoryImage)
+					.resizable()
+					.scaledToFit()
+					.padding(.horizontal, 8)
+					.padding(.bottom, 4)
+				
+				Text(categoryName)
+					.font(.montserratRegular(10))
+					.foregroundStyle(Color.charcoalGray)
+			}
+			.frame(maxWidth: .infinity)
 		}
-		.frame(width: 100)
 	}
 }
 
