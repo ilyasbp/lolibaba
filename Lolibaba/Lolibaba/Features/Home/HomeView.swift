@@ -75,7 +75,7 @@ struct HomeView: View {
 								}
 							}
 						}
-						.padding(.horizontal, 14)
+						.padding(.horizontal, 10)
 					}
 				}
 				.padding(.vertical)
@@ -110,22 +110,39 @@ struct ProductCardView: View {
 	let product: Product
 	
 	var body: some View {
-		VStack(alignment: .leading) {
-			Image(product.imageName)
+		VStack(alignment: .leading, spacing: 4) {
+			let imageSize = (UIScreen.width - 30) / 2
+			
+			Image(.bannerFashion)
 				.resizable()
-				.scaledToFit()
-				.frame(height: 150)
-				.cornerRadius(10)
-			Text(product.name)
-				.font(.headline)
-			Text("$\(product.price, specifier: "%.2f")")
-				.font(.subheadline)
-				.foregroundColor(.secondary)
+				.scaledToFill()
+				.frame(width: imageSize, height: imageSize)
+			
+			VStack(alignment: .leading, spacing: 4) {
+				Text(product.name)
+					.font(.montserratRegular(12))
+					.foregroundStyle(Color.charcoalGray)
+					.lineLimit(2, reservesSpace: true)
+					.multilineTextAlignment(.leading)
+				
+				Text(CurrencyUtils.formatToRupiah(from: product.price))
+					.font(.montserratBold(14))
+					.foregroundStyle(Color.charcoalGray)
+			}
+			.padding(.horizontal, 6)
+			
+			Button(action: {}){
+				Text("Tambah ke keranjang")
+					.font(.montserratSemiBold(12))
+					.foregroundStyle(Color.white)
+					.frame(maxWidth: .infinity)
+					.padding(.vertical, 8)
+					.background(Color.reddishOrange)
+			}
 		}
-		.padding()
 		.background(Color.white)
-		.cornerRadius(10)
-		.shadow(radius: 5)
+		.cornerRadius(6)
+		.shadow(radius: 1)
 	}
 }
 
@@ -137,8 +154,8 @@ struct Product: Identifiable {
 	let price: Double
 	
 	static let sampleProducts = [
-		Product(name: "Product 1", imageName: "product1", price: 29.99),
-		Product(name: "Product 2", imageName: "product2", price: 49.99),
+		Product(name: "Product 1oasidfi oasodf jaso dfi asoif asoi dfo asdfoi", imageName: "product1", price: 999999),
+		Product(name: "Product 2", imageName: "product2", price: 79999),
 		Product(name: "Product 3", imageName: "product3", price: 19.99),
 		Product(name: "Product 4", imageName: "product4", price: 99.99)
 	]
