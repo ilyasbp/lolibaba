@@ -115,6 +115,13 @@
 			path = Utilities;
 			sourceTree = "<group>";
 		};
+		7470732A2C63542800F1B5A6 /* Account */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
 		749A7F7B2C59EB9100B04266 = {
 			isa = PBXGroup;
 			children = (
@@ -224,6 +231,7 @@
 		74D723982C5CC0520044B859 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				7470732A2C63542800F1B5A6 /* Account */,
 				742074BB2C5CC34F0055A3A6 /* Home */,
 				742074BE2C5CC3DB0055A3A6 /* Product Detail */,
 				74D723782C5CBF9D0044B859 /* MainMenuView.swift */,
