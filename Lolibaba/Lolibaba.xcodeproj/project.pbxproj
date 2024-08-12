@@ -9,11 +9,13 @@
 /* Begin PBXBuildFile section */
 		742074BD2C5CC3680055A3A6 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742074BC2C5CC3680055A3A6 /* HomeView.swift */; };
 		742074C02C5CC44D0055A3A6 /* ProductDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742074BF2C5CC44D0055A3A6 /* ProductDetailView.swift */; };
+		742B4C462C65EA58002A7091 /* CartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742B4C452C65EA58002A7091 /* CartView.swift */; };
 		74449C812C620C8800FFBE0C /* CurrencyUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74449C802C620C8800FFBE0C /* CurrencyUtils.swift */; };
 		74449CA12C621C3700FFBE0C /* UIScreen+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74449CA02C621C3700FFBE0C /* UIScreen+Extension.swift */; };
 		747073252C634F2D00F1B5A6 /* ProductCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 747073242C634F2D00F1B5A6 /* ProductCellView.swift */; };
 		747073272C63524900F1B5A6 /* CategoryCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 747073262C63524900F1B5A6 /* CategoryCellView.swift */; };
 		747073292C6352C800F1B5A6 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 747073282C6352C800F1B5A6 /* Product.swift */; };
+		748E0A422C65F5240028E588 /* CheckBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748E0A412C65F5240028E588 /* CheckBoxView.swift */; };
 		749A7F882C59EB9100B04266 /* LolibabaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749A7F872C59EB9100B04266 /* LolibabaApp.swift */; };
 		749A7FB32C59F11800B04266 /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749A7FB22C59F11800B04266 /* SplashScreenView.swift */; };
 		74D723802C5CBF9D0044B859 /* Montserrat-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 74D723602C5CBF9D0044B859 /* Montserrat-Black.ttf */; };
@@ -43,12 +45,14 @@
 /* Begin PBXFileReference section */
 		742074BC2C5CC3680055A3A6 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		742074BF2C5CC44D0055A3A6 /* ProductDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailView.swift; sourceTree = "<group>"; };
+		742B4C452C65EA58002A7091 /* CartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartView.swift; sourceTree = "<group>"; };
 		74449C802C620C8800FFBE0C /* CurrencyUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyUtils.swift; sourceTree = "<group>"; };
 		74449C9F2C6217CF00FFBE0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		74449CA02C621C3700FFBE0C /* UIScreen+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScreen+Extension.swift"; sourceTree = "<group>"; };
 		747073242C634F2D00F1B5A6 /* ProductCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCellView.swift; sourceTree = "<group>"; };
 		747073262C63524900F1B5A6 /* CategoryCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCellView.swift; sourceTree = "<group>"; };
 		747073282C6352C800F1B5A6 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		748E0A412C65F5240028E588 /* CheckBoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBoxView.swift; sourceTree = "<group>"; };
 		749A7F842C59EB9100B04266 /* Lolibaba.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lolibaba.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		749A7F872C59EB9100B04266 /* LolibabaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LolibabaApp.swift; sourceTree = "<group>"; };
 		749A7F8D2C59EB9300B04266 /* Lolibaba.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Lolibaba.entitlements; sourceTree = "<group>"; };
@@ -107,6 +111,14 @@
 			path = "Product Detail";
 			sourceTree = "<group>";
 		};
+		742B4C442C65EA43002A7091 /* Cart */ = {
+			isa = PBXGroup;
+			children = (
+				742B4C452C65EA58002A7091 /* CartView.swift */,
+			);
+			path = Cart;
+			sourceTree = "<group>";
+		};
 		74449C7F2C620A8D00FFBE0C /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
@@ -120,6 +132,14 @@
 			children = (
 			);
 			path = Account;
+			sourceTree = "<group>";
+		};
+		748E0A402C65F4F20028E588 /* Custom View */ = {
+			isa = PBXGroup;
+			children = (
+				748E0A412C65F5240028E588 /* CheckBoxView.swift */,
+			);
+			path = "Custom View";
 			sourceTree = "<group>";
 		};
 		749A7F7B2C59EB9100B04266 = {
@@ -206,6 +226,7 @@
 		74D723772C5CBF9D0044B859 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				748E0A402C65F4F20028E588 /* Custom View */,
 				74D723762C5CBF9D0044B859 /* Extensions */,
 				74449C7F2C620A8D00FFBE0C /* Utilities */,
 			);
@@ -232,6 +253,7 @@
 			isa = PBXGroup;
 			children = (
 				7470732A2C63542800F1B5A6 /* Account */,
+				742B4C442C65EA43002A7091 /* Cart */,
 				742074BB2C5CC34F0055A3A6 /* Home */,
 				742074BE2C5CC3DB0055A3A6 /* Product Detail */,
 				74D723782C5CBF9D0044B859 /* MainMenuView.swift */,
@@ -336,7 +358,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				742B4C462C65EA58002A7091 /* CartView.swift in Sources */,
 				747073272C63524900F1B5A6 /* CategoryCellView.swift in Sources */,
+				748E0A422C65F5240028E588 /* CheckBoxView.swift in Sources */,
 				74449C812C620C8800FFBE0C /* CurrencyUtils.swift in Sources */,
 				74D723922C5CBF9D0044B859 /* Font+Extension.swift in Sources */,
 				742074BD2C5CC3680055A3A6 /* HomeView.swift in Sources */,
